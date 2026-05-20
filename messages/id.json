@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "works": "Karya",
+    "contact": "Kontak"
+  },
+  "hero": {
+    "greeting": "Halo, saya",
+    "name": "Made Egar",
+    "role": "Fullstack Developer",
+    "description": "Seorang Fullstack Web Developer yang fokus dalam modern, cepat, dan estetis.",
+    "cta_primary": "Lihat Proyek",
+    "cta_secondary": "Hubungi Saya"
+  },
+  "about": {
+    "title": "Tentang Saya",
+    "description": "Saya seorang Fullstack Developer yang passionate dalam membangun aplikasi web yang indah dan performant.",
+    "skills_title": "Tech Stack"
+  },
+  "works": {
+    "title": "Karya Saya",
+    "description": "Beberapa proyek yang pernah saya kerjakan.",
+    "view_project": "Lihat Proyek",
+    "view_code": "Lihat Kode"
+  },
+  "contact": {
+    "title": "Hubungi Saya",
+    "description": "Punya proyek yang ingin dikerjakan? Mari bicara.",
+    "name": "Nama",
+    "email": "Email",
+    "message": "Pesan",
+    "send": "Kirim Pesan"
+  }
+}

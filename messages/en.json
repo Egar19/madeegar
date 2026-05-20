@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "works": "Works",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Made Egar",
+    "role": "Fullstack Developer",
+    "description": "A Fullstack Web Developer focused on modern, fast, and aesthetic.",
+    "cta_primary": "View Projects",
+    "cta_secondary": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a Fullstack Developer with a passion for building beautiful and performant web applications.",
+    "skills_title": "Tech Stack"
+  },
+  "works": {
+    "title": "My Works",
+    "description": "Some projects I've worked on.",
+    "view_project": "View Project",
+    "view_code": "View Code"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Have a project in mind? Let's talk.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message"
+  }
+}
