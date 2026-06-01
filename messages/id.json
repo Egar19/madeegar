@@ -1,21 +1,25 @@
 {
   "nav": {
     "home": "Beranda",
+    "services": "Layanan",
     "about": "Tentang",
     "works": "Karya",
     "contact": "Kontak"
   },
   "hero": {
-    "greeting": "Halo, saya",
-    "name": "Made Egar",
-    "role": "Fullstack Developer",
-    "description": "Seorang Fullstack Web Developer yang fokus dalam modern, cepat, dan estetis.",
-    "cta_primary": "Lihat Proyek",
-    "cta_secondary": "Hubungi Saya"
+    "badge": "Halo, Saya Made Egar 👋",
+    "role": "Web Developer",
+    "location": "Bali, Indonesia",
+    "title": "Membantu Bisnis Anda Tumbuh dengan Website Modern dan Profesional",
+    "subtitle": "Saya membantu UMKM, startup, dan berbagai bisnis membangun website yang cepat, menarik, dan dirancang untuk meningkatkan kepercayaan pelanggan.",
+    "cta_primary": "Konsultasi Gratis",
+    "cta_secondary": "Lihat Portofolio"
   },
   "about": {
+    "label": "Tentang",
     "title": "Tentang Saya",
-    "description": "Saya seorang Fullstack Developer yang passionate dalam membangun aplikasi web yang indah dan performant.",
+    "education": "Pendidikan",
+    "description": "Halo, saya Made Egar seorang Web Developer dengan semangat untuk membantu bisnis. Saya berdedikasi membantu bisnis dari berbagai skala untuk hadir secara profesional di dunia digital.",
     "skills_title": "Tech Stack"
   },
   "works": {

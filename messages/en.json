@@ -1,21 +1,25 @@
 {
   "nav": {
     "home": "Home",
+    "services": "Services",
     "about": "About",
     "works": "Works",
     "contact": "Contact"
   },
   "hero": {
-    "greeting": "Hi, I'm",
-    "name": "Made Egar",
-    "role": "Fullstack Developer",
-    "description": "A Fullstack Web Developer focused on modern, fast, and aesthetic.",
-    "cta_primary": "View Projects",
-    "cta_secondary": "Contact Me"
+    "badge": "Hi, I'm Made Egar 👋",
+    "role": "Web Developer",
+    "location": "Bali, Indonesia",
+    "title": "Helping Businesses Grow with Modern and Professional Websites",
+    "subtitle": "I help small businesses, startups, and entrepreneurs build fast, modern, and engaging websites that strengthen their online presence and credibility.",
+    "cta_primary": "Free Consultation",
+    "cta_secondary": "View Portfolio"
   },
   "about": {
+    "label": "About",
     "title": "About Me",
-    "description": "I'm a Fullstack Developer with a passion for building beautiful and performant web applications.",
+    "education" : "Education",
+    "description": "Hello, I'm Made Egar, a web developer with a passion for helping businesses. I'm dedicated to helping businesses of all sizes establish a professional presence in the digital world.",
     "skills_title": "Tech Stack"
   },
   "works": {

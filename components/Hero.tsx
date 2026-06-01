@@ -1,88 +1,93 @@
 'use client';
-
+import { ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-
-import {
-  ArrowRight,
-} from 'lucide-react';
-
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-
 import { Button } from '@/components/ui/button';
 import Container from './Container';
+import Image from 'next/image';
+import { motion } from 'motion/react';
+import { TypingText } from './TypingText';
 
 export const Hero = () => {
   const t = useTranslations('hero');
 
   return (
-    <section
-      id='hero'
-      className='relative overflow-hidden py-24 md:py-32'
-    >
-      {/* Background Blur */}
-      <div className='absolute inset-0 -z-10'>
-        <div className='absolute left-1/2 top-0 h-125 w-125 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl' />
-      </div>
-
+    <section id='hero' className='relative overflow-hidden py-10 md:py-25'>
+      <div className='absolute inset-0 grid-bg opacity-40' aria-hidden />
+      <div
+        className='absolute inset-x-0 bottom-0 h-40 bg-linear-to-b from-transparent to-background'
+        aria-hidden
+      />
       <Container>
-        <div className='flex flex-col items-center text-center'>
-          {/* Greeting */}
-          <p className='mb-4 text-sm font-medium uppercase tracking-widest text-muted-foreground'>
-            {t('greeting')}
-          </p>
+        <div className='relative z-10 flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-10'>
+          <div className='flex flex-col items-center text-center md:items-start md:text-left gap-6'>
+            <h1 className='max-w-3xl text-4xl font-bold leading-tight text-primary md:text-5xl'>
+              {t('title')}
+            </h1>
 
-          {/* Heading */}
-          <h1 className='max-w-4xl text-4xl font-bold tracking-tight md:text-6xl lg:text-7xl'>
-            {t('name')}
-          </h1>
+            <p className='max-w-xl text-base text-muted-foreground sm:text-lg md:text-xl'>
+              {t('subtitle')}
+            </p>
 
-          {/* Role */}
-          <h2 className='mt-3 bg-linear-to-r from-primary to-primary/60 bg-clip-text text-2xl font-semibold text-transparent md:text-4xl'>
-            {t('role')}
-          </h2>
+            <div className='flex flex-wrap items-center justify-center md:justify-start gap-4 mt-2'>
+              <Button
+                size='lg'
+                className='bg-primary hover:bg-accent-hover text-accent gap-2 cursor-pointer'
+                onClick={() =>
+                  window.open('https://wa.me/+6281995376844', '_blank')
+                }
+              >
+                {t('cta_primary')}
+                <ArrowRight className='w-4 h-4' />
+              </Button>
 
-          {/* Description */}
-          <p className='mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg'>
-            {t('description')}
-          </p>
-
-          {/* CTA */}
-          <div className='mt-8 flex flex-col items-center gap-3 sm:flex-row'>
-            <Button
-              size='lg'
-              className='rounded-full px-6'
-            >
-              {t('cta_primary')}
-              <ArrowRight className='ml-2 h-4 w-4' />
-            </Button>
-
-            <Button
-              variant='outline'
-              size='lg'
-              className='rounded-full px-6'
-            >
-              {t('cta_secondary')}
-              <FaWhatsapp className='ml-2 h-4 w-4' />
-            </Button>
+              <Button
+                size='lg'
+                variant='outline'
+                className='border-border text-foreground hover:bg-card gap-2 cursor-pointer'
+                onClick={() => {
+                  document.getElementById('works')?.scrollIntoView({
+                    behavior: 'smooth',
+                  });
+                }}
+              >
+                {t('cta_secondary')}
+              </Button>
+            </div>
           </div>
 
-          {/* Social */}
-          <div className='mt-10 flex items-center gap-3'>
-            <Button
-              variant='outline'
-              size='icon'
-              className='rounded-full'
-            >
-              <FaGithub className='h-4 w-4' />
-            </Button>
+          <div className='flex flex-col items-center gap-4 shrink-0'>
+            <div className='flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm text-foreground shadow-sm'>
+              <div className='flex items-center'>
+                <TypingText text={t('badge')} />
+                <motion.span
+                  animate={{ opacity: [1, 0, 1] }}
+                  transition={{
+                    duration: 0.8,
+                    repeat: Infinity,
+                  }}
+                >
+                  |
+                </motion.span>
+              </div>
+            </div>
 
-            <Button
-              variant='outline'
-              size='icon'
-              className='rounded-full'
-            >
-              <FaLinkedin className='h-4 w-4' />
-            </Button>
+            <div className='relative'>
+              <div className='absolute inset-0 rounded-full bg-primary/20 dark:bg-primary/30 blur-3xl' />
+
+              <Image
+                src='/photo-profile.png'
+                alt='profile'
+                width={250}
+                height={250}
+                className='relative rounded-full w-35 h-35 md:w-55 md:h-55 object-cover'
+              />
+            </div>
+
+            <p className='text-sm text-muted-foreground tracking-wide text-center'>
+              {t('role')}
+              <span className='mx-2 text-accent'>·</span>
+              {t('location')}
+            </p>
           </div>
         </div>
       </Container>

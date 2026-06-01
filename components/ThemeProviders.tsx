@@ -9,9 +9,10 @@ export default function ThemeProviders({
 }) {
   return (
     <ThemeProvider
-      attribute="class"
-      defaultTheme="system"
+      attribute='class'
+      defaultTheme='light'
       enableSystem
+      disableTransitionOnChange
     >
       {children}
     </ThemeProvider>
