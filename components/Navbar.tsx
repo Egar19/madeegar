@@ -4,7 +4,6 @@ import { useTranslations } from 'next-intl';
 
 import {
   Home,
-  User,
   Code2,
   Mail,
   Hexagon,
@@ -21,7 +20,6 @@ import { useState, useEffect } from 'react';
 const navItems = [
   { key: 'home', sectionId: 'hero', icon: Home },
   { key: 'services', sectionId: 'services', icon: NotebookPen },
-  { key: 'about', sectionId: 'about', icon: User },
   { key: 'works', sectionId: 'works', icon: Code2 },
   { key: 'contact', sectionId: 'contact', icon: Mail },
 ];

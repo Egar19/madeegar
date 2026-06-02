@@ -11,7 +11,7 @@ export const Hero = () => {
   const t = useTranslations('hero');
 
   return (
-    <section id='hero' className='relative overflow-hidden py-10 md:py-25'>
+    <section id='hero' className='relative overflow-hidden py-10'>
       <div className='absolute inset-0 grid-bg opacity-40' aria-hidden />
       <div
         className='absolute inset-x-0 bottom-0 h-40 bg-linear-to-b from-transparent to-background'

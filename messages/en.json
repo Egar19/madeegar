@@ -15,12 +15,31 @@
     "cta_primary": "Free Consultation",
     "cta_secondary": "View Portfolio"
   },
-  "about": {
-    "label": "About",
-    "title": "About Me",
-    "education" : "Education",
-    "description": "Hello, I'm Made Egar, a web developer with a passion for helping businesses. I'm dedicated to helping businesses of all sizes establish a professional presence in the digital world.",
-    "skills_title": "Tech Stack"
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Professional website solutions for every business need",
+    "items": [
+      {
+        "icon": "Globe",
+        "title": "Company Profile Website",
+        "description": "Build your business credibility and presence online"
+      },
+      {
+        "icon": "Rocket",
+        "title": "Landing Page / Sales Page",
+        "description": "High-converting pages for your promotions and campaigns"
+      },
+      {
+        "icon": "ShoppingBag",
+        "title": "Online Store / E-Commerce",
+        "description": "Complete online shopping platform for your products"
+      },
+      {
+        "icon": "Code2",
+        "title": "Web App & Custom System",
+        "description": "Custom web systems tailored to your business needs"
+      }
+    ]
   },
   "works": {
     "title": "My Works",

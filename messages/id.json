@@ -15,12 +15,31 @@
     "cta_primary": "Konsultasi Gratis",
     "cta_secondary": "Lihat Portofolio"
   },
-  "about": {
-    "label": "Tentang",
-    "title": "Tentang Saya",
-    "education": "Pendidikan",
-    "description": "Halo, saya Made Egar seorang Web Developer dengan semangat untuk membantu bisnis. Saya berdedikasi membantu bisnis dari berbagai skala untuk hadir secara profesional di dunia digital.",
-    "skills_title": "Tech Stack"
+  "services": {
+    "title": "Layanan Kami",
+    "subtitle": "Solusi website profesional untuk setiap kebutuhan bisnis Anda",
+    "items": [
+      {
+        "icon": "Globe",
+        "title": "Company Profile Website",
+        "description": "Membangun kepercayaan bisnis Anda secara online"
+      },
+      {
+        "icon": "Rocket",
+        "title": "Landing Page / Sales Page",
+        "description": "Halaman konversi tinggi untuk promosi dan kampanye"
+      },
+      {
+        "icon": "ShoppingBag",
+        "title": "Toko Online / E-Commerce",
+        "description": "Platform belanja online lengkap untuk produk Anda"
+      },
+      {
+        "icon": "Code2",
+        "title": "Web App & Custom System",
+        "description": "Sistem web custom sesuai kebutuhan bisnis"
+      }
+    ]
   },
   "works": {
     "title": "Karya Saya",
